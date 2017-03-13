@@ -1,0 +1,18 @@
+eggman:
+  development:
+    host: http://wechat-test1.eggman.tv
+
+    wechat_id: <%= ENV['WECHAT_DEV_SANDBOX_ID'] %>
+    app_id: <%= ENV['WECHAT_DEV_SANDBOX_APP_ID'] %>
+    app_secret: <%= ENV['WECHAT_DEV_SANDBOX_APP_SECRET'] %>
+
+    oauth2_redirect_uri: "http://wechat-test1.eggman.tv/wechat/users/callback"
+    
+    push_url: "http://wechat-test1.eggman.tv/wechat/push"
+    push_token: <%= ENV['WECHAT_DEV_SANDBOX_PUSH_TOKEN'] %>
+  production:
+    host: https://eggman.tv
+
+    wechat_id: xxxxxxxxxx
+    app_id: xxxxxxxxxxxxxxxxxxxx
+    app_secret: xxxxxxxxxxxxxxxxxxxxxxxxxx
