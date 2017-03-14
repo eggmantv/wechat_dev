@@ -1,0 +1,13 @@
+button:
+  - type: view
+    name: 我的
+    url: <%= @config.oauth2_entrance_url(scope: 'snsapi_userinfo', state: 'profile') %>
+  - type: view
+    name: 课程
+    sub_button:
+      - type: view
+        name: 免费课程
+        url:  <%= @config.oauth2_entrance_url(scope: 'snsapi_userinfo', state: 'free') %>
+      - type: view
+        name: 付费课程
+        url:  <%= @config.oauth2_entrance_url(scope: 'snsapi_userinfo', state: 'paid') %>
