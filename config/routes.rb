@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   namespace :wechat do
     controller :push do
       get '/push' => :index
+      post '/push' => :data
     end
   end
 end
