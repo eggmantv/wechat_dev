@@ -7,5 +7,9 @@ Rails.application.routes.draw do
       get '/push' => :index
       post '/push' => :data
     end
+
+    controller :users, path: 'users' do
+      get '/callback' => :callback
+    end
   end
 end

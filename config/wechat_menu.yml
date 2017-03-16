@@ -1,3 +1,5 @@
+# wechat oauth2 url: https://open.weixin.qq.com/connect/oauth2/authorize?appid=xxxxxxxxx&redirect_uri=http://xxx&response_type=code&scope=snsapi_userinfo&state=profile
+
 button:
   - type: view
     name: 我的
