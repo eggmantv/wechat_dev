@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'wechat-gate', '>= 0.1.4'
+gem 'wechat-gate', '>= 0.1.5'
 gem 'nokogiri'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

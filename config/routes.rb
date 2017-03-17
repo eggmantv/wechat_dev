@@ -11,5 +11,10 @@ Rails.application.routes.draw do
     controller :users, path: 'users' do
       get '/callback' => :callback
     end
+
+    controller :ticket, path: 'ticket' do
+      get '' => :index
+      get 'share_test' => :share_test
+    end
   end
 end
